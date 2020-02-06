@@ -1,0 +1,80 @@
+<!-- --------------------------------------------
++ Description : Program to define small quotes 
++ Date        : 13 dec 2019
++-------------------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        dl dt{
+            color: blue;
+        }
+        dl dd{
+            color: black;
+        }
+        tr:nth-child(even){
+            background-color: rgb(204, 179, 179);
+            color: purple;
+        }
+        tr:nth-child(odd){
+            background-color: wheat;
+            color: red;
+        }
+        td,th{
+            width: 300px;
+            height: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<!--used order list ,unordered list and description tag to display how these tags work-->
+<body style="background-color: rgb(184, 80, 80);">
+    <ol style="color: burlywood;">
+        <li><b>Chapter One</b></li>
+        <ul style="color: purple;">
+            <li>HTML Introduction</li>
+        <dl>
+            <dt>What is HTML?</dt>
+            <dd>Write the content about HTML</dd>
+            <hr>
+            <dt>Features of HTML5</dt>
+            <dd>Write some of the features of HTML5</dd>
+        </dl>
+        <li>Tags in HTML</li>
+        <dl>
+            <dt >What is HTML?</dt>
+            <dd>
+                <table border="1px" style="border-collapse: collapse;">
+                    <caption style="caption-side: top; text-align: center; color: yellow;"> Table. HTML5 Tags</caption>
+                <tr style="color: white;background-color: indigo;">
+                    <th>Categories</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Basic Tags</td>
+                    <td>Details about the basic tags and examples</td>
+                </tr>
+                <tr>
+                    <td>Formatting Tags</td>
+                    <td>Details about the  tags and examples</td>
+                </tr>
+                <tr>
+                    <td>Media Tags</td>
+                    <td>Details about the  tags and examples</td>
+                </tr>
+                <tr>
+                    <td>Lists Tags</td>
+                    <td>Details about the  tags and examples</td>
+                </tr>
+                </table>
+            </dd>
+            <hr>
+        </dl>
+    </ul>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- --------------------------------------------
++ Description : Program to define small quotes  
++ Date        : 13 dec 2019
++-------------------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!--This is about the different targets and its use.
+Here  we have used border with anchor tag and "target = _self,_parent,_top"-->
+<body style="background-color: rgb(247, 212, 229);">
+    <h1 style="text-align: center ;"><b>HTML5 Links - Target Attribute</b></h1>
+    <div style="border:2px solid black; height: 500px; width: 700px; margin: auto;">
+        <center>
+            <a href="asgmnt6self.html" target="_self">About SELF target</a>
+            <p>When you click on the link above it will open in the same window</p>
+        </center>
+        <div style="border: 2px solid black; height: 400px; width: 500px; margin: auto;">
+            <center>
+                <p>The link will open in parent window</p>
+                <a href="asgmnt6parent.html" target="_parent">About PARENT Target</a>
+            </center>
+            <div style="border: 2px solid black; height: 300px; width: 300px; margin: auto;">
+                <center>
+                    <p>Link will open in the top of the window</p>
+                    <a href="asgmnt6top.html" target="_top">About TOP target</a>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

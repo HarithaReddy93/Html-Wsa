@@ -1,0 +1,50 @@
+<!-- --------------------------------------------
++ Description : Program to define small quotes 
++ Date        : 12 dec 2019
++-------------------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    pre{
+        line-height: 0.5;
+    }
+</style>
+<!-- pre tag is used mostly to display as it is-->
+<body style="background-color: black; ">
+    <span style="color: green; font-family:'Courier New', Courier, monospace ;" ><span><</span>!--todo: put this in a different file!!!</span>
+    <pre style="color:rgb(252, 8, 191) ; font-family: 'Courier New', Courier, monospace;"><span style="color: white;"><</span>script<span style="color: white;">></span></pre>
+    <pre  style="font-family: 'Courier New', Courier, monospace;"><span style="color:rgb(105, 208, 248); font-style: italic;">function</span><span style="color:greenyellow ;"> authenticationUser</span><span style="color: white;">(</span><span style="color: rgb(238, 125, 84); font-style: italic;">username, password</span><span style="color: white;">)</span> <span style="color: white; font-size:medium ;">{</span></pre>
+    <pre style="font-family: 'Courier New', Courier, monospace;"><span style="color: rgb(105, 208, 248); font-style: italic;">  var</span> <span style="color: white;">accounts</span> <span style="color: rgb(252, 8, 191) ;">=</span> <span style="color: white;">apiService.sql(</span> </pre>
+    <pre style="font-family: 'Courier New', Courier, monospace;;">    <span style="color:rgb(219, 219, 39) ;">"SELECT * FROM users"</span></pre>
+    <pre>   <span style="color: white;"><b>};</b></span></pre>
+    <pre style="font-family: 'Courier New', Courier, monospace;"> <span style="color: rgb(252, 8, 191);"> for</span><span style="color: white;">(</span><span style="color:rgb(105, 208, 248);">var</span> <span style="color: white;">i</span><span style="color: rgb(252, 8, 191);">=</span><span style="color: rgb(146, 92, 201);">0</span><span style="color: white;">;</span> <span style="color: white;">i</span> <span style="color: rgb(252, 8, 191);"><</span><span style="color: white;"> accounts.</span><span style="color:blue ;">length</span><span style="color: white;">; i</span><span style="color:rgb(252, 8, 191);">++</span><span style="color: white;">) {</span></pre>
+        <pre style="font-family: 'Courier New', Courier, monospace;"><span style="color: rgb(105, 208, 248); font-style: italic;">  var</span> <span style="color: white;">account</span> <span style="color: rgb(252, 8, 191) ;">=</span> <span style="color: white;">accounts[i](</span> </pre>
+<pre style="font-family: 'Courier New', Courier, monospace;"><span style="color: rgb(252, 8, 191);">if</span><span style="color: white;"> (account.username </span><span style="color: rgb(252, 8, 191);" > === </span><span style="color: white;"> username</span> <span style="color: rgb(252, 8, 191);">&&</span></pre>
+<pre style="font-family: 'Courier New', Courier, monospace;"><span style="color: white;">    account.username </span><span style="color: rgb(252, 8, 191);" > === </span><span style="color: white;"> password)</span></pre>
+<pre>   <span style="color: white;"><b>{</b></span></pre>
+<pre style="font-family: 'Courier New', Courier, monospace;"><span style="color: rgb(252, 8, 191);">   return</span><span style="color:rgb(146, 92, 201);">  true</span><span style="color: white;">;</span></pre>
+<pre>   <span style="color: white;"><b>}</b></span></pre>
+<pre><span style="color: white;"><b>}</b></span></pre>
+<pre style="font-family: 'Courier New', Courier, monospace;"><span style="color:rgb(252, 8, 191) ;">if</span> <span style="color: yellow;" >"true" </span><span style="color:rgb(252, 8, 191) ;"> === </span> <span style="color: yellow">"true"</span><span style="color: white;">) <b>{</b></span></pre>
+    <pre style="font-family: 'Courier New', Courier, monospace;"><span style="color: rgb(252, 8, 191);">   return</span><span style="color:rgb(146, 92, 201);">  true</span><span style="color: white;">;</span></pre>
+    <pre>   <span style="color: white;"><b>}</b></span></pre>
+    <pre><span style="color: white;"><b>}</b></span></pre>
+    <pre style="font-family: 'Courier New', Courier, monospace;"><span style="color:rgb(252, 8, 191) ;" >$</span><span style="color: white;">(</span><span style="color:rgb(219, 219, 39) ;">'#login'</span><span style="color: white;">).</span><span style="color: rgb(105, 208, 248);">click</span><span style="color: white;">(</span><span style="color: rgb(105, 208, 248); font-style: italic;">function</span><span style="color: white;">()  <b>{</b></span></pre>
+<pre style="font-family: 'Courier New', Courier, monospace;"><span style="color: rgb(105, 208, 248); font-style: italic;" >var</span> <span style="color: white;">username</span><span style="color: rgb(252, 8, 191);"> = $</span><span style="color: white;">(</span><span style="color: yellow;">"#username"</span><span style="color: white;">).val();</span></pre>
+<pre style="font-family: 'Courier New', Courier, monospace;"><span style="color: rgb(105, 208, 248); font-style: italic;" >var</span> <span style="color: white;">password</span><span style="color: rgb(252, 8, 191);"> = $</span><span style="color: white;">(</span><span style="color: yellow;">"#password"</span><span style="color: white;">).val();</span></pre>
+<pre style="font-family: 'Courier New', Courier, monospace;"><span style="color: rgb(105, 208, 248); font-style: italic;" >var</span> <span style="color: white;">authenticated</span><span style="color: rgb(252, 8, 191);"> = </span><span style="color: white;">authenticationUser(username, password) ;</span></pre>
+<pre style="font-family: 'Courier New', Courier, monospace;"><span style="color:rgb(252, 8, 191) ;">if</span> <span style="color: white;" >(authenticated </span><span style="color:rgb(252, 8, 191) ;"> === </span> <span style="color: rgb(146, 92, 201);">true</span><span style="color: white;">) <b>{</b></span></pre>
+<pre style="font-family: 'Courier New', Courier, monospace;"><span style="color:rgb(252, 8, 191);">$</span><span>.</span><span style="color: rgb(105, 208, 248);">cookie</span><span style="color: white;">(</span><span style="color: yellow;">'loggedin'</span><span style="color: white;">,</span><span style="color: yellow;">'yes'</span><span style="color: white;">,{ expires: </span><span style="color: rgb(146, 92, 201);">1</span><span style="color: white;">});</span></pre>
+<pre style="font-family: 'Courier New', Courier, monospace;" ><span style="color: white;"><b>}</b></span><span style="color:rgb(252, 8, 191) ;">else if</span><span style="color: white;">{authenticated </span><span style="color: rgb(252, 8, 191);"> === </span><span style="color:rgb(146, 92, 201);">false</span></pre>
+<pre style="font-family: 'Courier New', Courier, monospace;"> <span style="color:rgb(252, 8, 191);">$</span><span style="color: white;">{</span><span style="color: yellow;">"#error_message"</span><span style="color: white;">}.show();</span></pre>
+<pre>   <span style="color: white;"><b>}</b></span></pre>
+<pre><span style="color: white;"><b>} );</b></span></pre>
+<pre style="color:rgb(252, 8, 191) ; font-family: 'Courier New', Courier, monospace;"><span style="color: white;">< /</span>script<span style="color: white;">></span></pre>
+</body>
+</html>

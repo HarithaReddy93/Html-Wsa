@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgba(54, 87, 148, 0.8);
+            color: white;
+        }
+    
+        form {
+            background-color: rgb(236, 236, 236);
+            width: 400px;
+            height: 400px;
+            color: black;
+            padding-top: 20px;
+            margin-top: 80px;
+        }
+        /* to have gap between each input */
+        input {
+            margin-bottom: 20px;
+            width: 250px;
+            font-size: medium;
+        }
+    
+        input[type=text] {
+            width: 120px;
+        }
+        /* to style button  */
+        input[type=button] {
+            border-radius: 10px;
+            background-color: rgb(15, 110, 15);
+            height: 40px;
+        }
+       
+    </style>
+    </head>
+    
+    <body>
+        <!-- to align center -->
+        <center>
+            <!-- To Register -->
+            <form>
+                <h2> Register</h2>
+                <h4>Create your account. Its free and only takes a minute</h4>
+                <input type="text" name="first name" id="first name" placeholder="First Name">
+                <input type="text" name="last name" id="last name" placeholder="Last Name"> <br />
+                <input type="email " name="email id" placeholder="email id"> <br />
+                <input type="password" placeholder="password">
+                <input type="password" placeholder="Confirm Password"> <br>
+                <input type="checkbox" style="margin: -100px;">I accept the Terms of use & privacy policy <br><br>
+                <input type="button" value="Register Now">
+            </form>
+            <p>Already have an account?Sign in</p>
+        </center>
+    
+    </body>
+    
+    </html>

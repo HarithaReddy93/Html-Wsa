@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* nav bar lists to display inline*/
+        ul {
+            display: inline;
+        }
+
+        li {
+            display: inline;
+            list-style-type: none;
+        }
+
+        /*anchor tag in nav bar*/
+        a {
+            text-decoration: none;
+            margin-left: 45px;
+            font-size: large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        /*on hover links should change the color*/
+        a:hover {
+            color: red;
+        }
+
+        /* to give gap between app name and links*/
+        #app_name {
+            margin-left: -30px;
+            margin-right: 680px;
+        }
+
+        /* app image */
+        ul img {
+            float: left;
+            margin-top: -10px;
+        }
+
+        /* heading to display in the center*/
+        h1 {
+            width: 500px;
+            justify-content: center;
+        }
+
+        .blocks {
+            background-color: rgb(245, 245, 245);
+            width: 100%;
+            height: 400px;
+            padding-top: 50px;
+            margin-top: -5px;
+        }
+
+        section {
+            width: 30%;
+            margin: 10px;
+            display: inline-block;
+            background-color: white;
+        }
+
+        /*style for about page*/
+        .maps {
+            background-color: rgb(245, 245, 245);
+            text-align: center;
+            height: 400px;
+            padding-top: 40px;
+        }
+
+        .maps>img {
+            float: left;
+            width: 500px;
+        }
+
+        .address {
+            float: right;
+        }
+
+        p img {
+            width: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="app_body">
+        <!-- Nav Bar -->
+        <a href="#" name='home'></a>
+        <nav>
+            <ul>
+                <img src="logo.PNG" alt="logo">
+                <li><a href="#" id="app_name">Pratilipi</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about" target="about">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="register_form.html" target="_blank">Register</a></li>
+            </ul>
+        </nav>
+        <!-- display in the center -->
+        <center>
+            <h1>Pratilipi is India's largest digital platform connecting readers and writers in 10 Indian languages</h1>
+            <img src="img1.PNG" alt="image1" style="width: 100%; ">
+            <!-- <img src="Template2.PNG" alt="image2" style="margin-top: -8px;"> -->
+            <div class="blocks">
+                <section>
+                    <img src="img2.PNG" alt="read">
+                    <h4>Read</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero pariatur, aut consequuntur
+                        aperiam maxime accusantium minus repellendus! Consequuntur temporibus, ab modi deleniti fuga et
+                        perspiciatis corrupti, possimus officiis eligendi sapiente!</p>
+
+                </section>
+                <section>
+                    <img src="img3.PNG" alt="write">
+                    <h4>Write</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero pariatur, aut consequuntur
+                        aperiam maxime accusantium minus repellendus! Consequuntur temporibus, ab modi deleniti fuga et
+                        perspiciatis corrupti, possimus officiis eligendi sapiente!</p>
+
+                </section>
+                <section>
+                    <img src="img4.PNG" alt="get_involved">
+                    <h4>Get Involved</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero pariatur, aut consequuntur
+                        aperiam maxime accusantium minus repellendus! Consequuntur temporibus, ab modi deleniti fuga et
+                        perspiciatis corrupti, possimus officiis eligendi sapiente!</p>
+
+                </section>
+            </div>
+
+        </center>
+
+        <!-- code for about page -->
+        <div style=" text-align: center; clear: left;">
+            <a href="#" name="about"></a>
+            <p style="font-weight:bold;">Download Pratilpi App</p>
+            <img src="img6.PNG" alt="google_store">
+            <div class="maps">
+                <img src="img5.PNG" alt="map image">
+                <!-- class adresss is used to give background color -->
+                <div class="addresss">
+                    <h2>Pratilpi</h2>
+                    <!-- Address -->
+                    <address>
+                        <pre>
+    Pratilpi Technologies Private Limited,
+    3rd floor, No.156/155th cross,15th main,
+80 feet road,Koramangala $th block,
+ Bangalore, Karnataka - 5600034
+</pre>
+                    </address>
+                    <p>CIN:U7220KA562GHA553</p>
+                    <p>Email:contact@pratipli.com</p>
+                    <p>Phone: 080-2465862</p>
+                    <p>Follow us on social media: <br>
+                        <img src="img7.PNG" alt="logo image"> </p>
+                </div>
+                <a href="#home" target="home">Home</a>
+                <!-- copyright -->
+                <p>
+                    &copy;2019 Nasadiya Tech Pvt Limited
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
